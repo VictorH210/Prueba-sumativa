@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario_nombre_apellido</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/js/bootstrap.min.js">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <style>
+    </style>
+</head>
+<body class="letra">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <header class="header">
+            <div class="logo">
+                <img src="assets/img/logo_cft nav.PNG" alt="logo">
+            </div>
+        </header>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Admisión</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Carreras
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Acción</a></li>
+                  <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Contactanos</a>
+              </li>
+            </ul>
+            <div class="Buscar">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form></div>
+        </div>
+      </nav>
+      <center><img src="assets/img/portada.jpeg" class="portada"></center>
+      <center><p>Si tienes dudas. Usa nuestro formulario de contacto para realizar las preguntas que nesecites. Recuerda que estamos para ayudarte y ofrecerte una educación de calidad. </p></center>
+      <center><h1>Formulario</h1></center>
+      <main class="container">
+        <form action="#" method="POST">
+           <center> <div class="TM">
+                <label for="nombre"></label>
+                <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre" required>
+            </div>
+            <div class="TM">
+                <label for="apellido"></label>
+                <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Apellido" required>
+            </div>
+            <div class="TM">
+                <label for="telefono"></label>
+                <input type="tel" id="telefono" name="telefono" class="form-control" placeholder="Teléfono" required>
+            </div>
+            <div class="TM">
+                <label for="carrera"></label>
+                <input type="text" id="carrera" name="carrera" class="form-control" placeholder="Carrera" required>
+            </div>
+            <div class="TM">
+                <label for="edad"></label>
+                <input type="number" id="edad" name="edad" class="form-control" placeholder="Edad" required>
+            </div>
+            <div class="TM">
+                <label for="mensaje"></label>
+                <textarea id="mensaje" name="mensaje" class="form-control" placeholder="Mensaje" required></textarea>
+            </div></center> 
+            <center><div class="BE"><button type="submit" class="btn btn-primary">Enviar</button></div></center>
+        </form>
+    </main>
+</body>
+</html>
